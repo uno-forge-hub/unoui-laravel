@@ -1,0 +1,40 @@
+
+@import url(./theme.css);
+@import '@unocss/reset/tailwind.css';
+@unocss;
+
+
+/* Firefox */
+* {
+    scrollbar-width: thin !important;
+    scrollbar-color: transparent !important;
+}
+
+/* Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+
+html,
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .dark:root {
+        color-scheme: dark;
+    }
+}

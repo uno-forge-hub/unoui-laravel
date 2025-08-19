@@ -1,0 +1,175 @@
+:root {
+  --bg: var(--c-white);
+  --bg-subtle: var(--c-gray-50);
+  --bg-surface: var(--c-gray-100);
+  --bg-muted: var(--c-gray-200);
+  --bg-surface-elevated: var(--c-gray-300);
+
+  --fg: var(--c-gray-700);
+  --fg-muted: var(--c-gray-600);
+  --fg-title: var(--c-gray-900);
+  --fg-subtitle: var(--c-gray-800);
+
+  --border: var(--c-gray-200);
+  --border-subtle: var(--c-gray-50);
+  --border-light: var(--c-gray-200);
+  --border-strong: var(--c-gray-300);
+  --border-emphasis: var(--c-gray-400);
+  --input: hsl(var(--c-gray-200));
+
+  --c-primary-DEFAULT: var(--c-primary-600);
+  --c-secondary-DEFAULT: var(--c-secondary-600);
+  --c-warning-DEFAULT: var(--c-warning-600);
+  --c-accent-DEFAULT: var(--c-accent-600);
+  --c-success-DEFAULT: var(--c-success-600);
+  --c-danger-DEFAULT: var(--c-danger-600);
+
+  --ui-input-focus-outline: var(--c-primary-600);
+  --ui-input-invalid-outline: var(--c-danger-600);
+  --ui-input-place-holder: var(--c-gray-500);
+  --switch-thumb-primary: var(--c-primary-600);
+  --switch-checked-thumb-primary: var(--primary-600);
+
+
+  --range-thumb-bg-gray: var(--bg);
+  --range-track-bg-gray: var(--c-gray-200);
+
+  --switch-checked-thumb-primary: var(--primary-600);
+
+  --switch-knob-white: var(--c-white);
+
+  --switch-knob-dark: var(--c-white);
+
+  --global-main-radius: 0.5rem;
+
+
+  --chart-color-1: hsl(var(--c-primary-600));
+  --chart-color-2: hsl(var(--c-secondary-600));
+  --gradient-opacity-from: 0.1;
+  --gradient-opacity-to: 0.8;
+
+  --chart-grid-color: hsl(var(--c-gray-200));
+  --chart-grid-dash-array: 2;
+
+}
+
+.dark {
+  /* Background colors */
+  --bg: var(--c-gray-950);
+  --bg-subtle: var(--c-gray-900);
+  --bg-surface: var(--c-gray-900);
+  --bg-muted: var(--c-gray-800);
+  --bg-surface-elevated: var(--c-gray-700);
+
+  /* Foreground colors */
+  --fg: var(--c-gray-300);
+  --fg-title: var(--c-white);
+  --fg-subtitle: var(--c-gray-200);
+  --fg-muted: var(--c-gray-300);
+  --fg-light: var(--c-gray-400);
+
+  /* Border colors */
+  --border: var(--c-gray-900);
+  --border-light: var(--c-gray-800);
+  --border-subtle: var(--c-gray-900);
+  --border-strong: var(--c-gray-700);
+  --border-emphasis: var(--c-gray-600);
+  --input: hsl(var(--c-gray-800) / 0.6);
+
+  --c-primary-DEFAULT: var(--c-primary-300);
+  --c-secondary-DEFAULT: var(--c-secondary-300);
+  --c-warning-DEFAULT: var(--c-warning-300);
+  --c-accent-DEFAULT: var(--c-accent-300);
+  --c-success-DEFAULT: var(--c-success-300);
+  --c-danger-DEFAULT: var(--c-danger-300);
+
+  --ui-input-focus-outline: var(--c-primary-500);
+  --ui-input-invalid-outline: var(--c-danger-500);
+  --ui-input-place-holder: var(--c-gray-500);
+  --switch-thumb-primary: var(--c-primary-500);
+  --switch-checked-thumb-primary: var(--primary-500);
+
+  --unify-grid-dotted-bg-gray: red;
+
+
+  --ui-checkbox-border: var(--border-light);
+
+  --switch-knob-dark: var(--c-gray-950);
+
+
+
+  --chart-color-1: hsl(var(--c-primary-300));
+  --chart-color-2: hsl(var(--c-secondary-400));
+  --gradient-opacity-from: 0.4;
+  --gradient-opacity-to: 0.04;
+
+
+
+  --chart-grid-color: hsl(var(--c-gray-800));
+  --chart-grid-dash-array: 2;
+
+
+}
+
+.apexcharts-tooltip {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.apexcharts-tooltip:before,
+.apexcharts-tooltip:after {
+  display: none !important;
+}
+
+
+:root {
+  --chart-color-1: #059669;
+  --chart-color-2: #818cf8;
+
+  --tooltip-bg: #ffffff;
+  --tooltip-border: #e5e7eb;
+  --tooltip-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  --tooltip-title-bg: #f9fafb;
+  --tooltip-title-color: #6b7280;
+
+  --tooltip-label-color: #9ca3af;
+  --tooltip-value-color: #4b5563;
+}
+
+/* Reset Apex default tooltip styles */
+.apexcharts-tooltip {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.apexcharts-tooltip:before,
+.apexcharts-tooltip:after {
+  display: none !important;
+}
+
+/* Custom tooltip styles */
+.apexcharts-tooltip .apexcharts-tooltip-title {
+  background-color: var(--tooltip-title-bg);
+  color: var(--tooltip-title-color);
+}
+
+.apexcharts-tooltip-series-group {
+  background-color: var(--tooltip-bg);
+  border: 1px solid var(--tooltip-border);
+  box-shadow: var(--tooltip-shadow);
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+}
+
+.apexcharts-tooltip-text-y-label {
+  color: var(--tooltip-label-color);
+}
+
+.apexcharts-tooltip-text-y-value {
+  color: var(--tooltip-value-color);
+}

@@ -1,0 +1,26 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite"
+    },
+    "dependencies": {
+        "@flexilla/alpine-collapse": "^0.1.0",
+        "@flexilla/alpine-dropdown": "^0.2.0",
+        "@flexilla/alpine-modal": "^0.2.0",
+        "@flexilla/alpine-offcanvas": "^0.1.2",
+        "apexcharts": "^5.3.3",
+        "autoprefixer": "^10.4.20",
+        "axios": "^1.7.4",
+        "concurrently": "^9.0.1",
+        "laravel-vite-plugin": "^2.0",
+        "vite": "^7.0.4"
+    },
+    "devDependencies": {
+        "@iconify-json/ph": "^1.2.2",
+        "@unifydev/flexilla": "^0.1.3",
+        "@unifydev/preset-ui": "^1.3.0",
+        "unocss": "^66.4.2"
+    }
+}
