@@ -1,30 +1,39 @@
-
 @import url(./theme.css);
 @import '@unocss/reset/tailwind.css';
 @unocss;
 
 
-/* Firefox */
+
 * {
-    scrollbar-width: thin !important;
-    scrollbar-color: transparent !important;
+    text-rendering: optimizeLegibility;
+    scrollbar-width: thin;
+    scrollbar-color: var(--c-border-scrollbar) transparent;
 }
 
-/* Chrome, Edge, and Safari */
+html {
+    font-variation-settings: normal;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+
 ::-webkit-scrollbar {
-    width: 0 !important;
-    height: 0 !important;
+    width: 4px;
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent !important;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: transparent !important;
-    border-radius: 0 !important;
-    border: none !important;
+    background: var(--c-border-scrollbar);
+    border-radius: 4px;
 }
+
+
 
 
 html,

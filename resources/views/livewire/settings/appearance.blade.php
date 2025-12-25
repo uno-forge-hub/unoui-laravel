@@ -54,7 +54,7 @@ new #[Layout('layouts.dash')] class extends Component {
                         @foreach ($themes as $theme)
                         <label for="radio_theme_{{ $theme['id'] }}" wire:key="theme-{{ $theme['id'] }}"
                             class="flex gap-x3 text-sm items-center p-4 rd-lg b b-border shadow-sm has-[:checked]:b-primary cursor-pointer hover-bg-bg-surface">
-                            <div class="size-8 d-flex-place-center rd-full b b-border">
+                            <div class="size-8 d-flex-place-center rd-full b b-border-strong/70 text-fg">
                                 <span class="flex {{ $theme['icon'] }}"></span>
                             </div>
                             <div

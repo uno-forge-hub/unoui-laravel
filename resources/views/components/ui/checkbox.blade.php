@@ -15,7 +15,7 @@
         'lg' => 'size-6',
     ];
 
-    $baseClasses = 'ui-checkbox-radio-base ui-form-checkbox mt0.5 peer text-primary bg-bg b b-border shadow-sm rd';
+    $baseClasses = 'ui-checkbox-radio-base ui-form-checkbox mt0.5 peer text-primary bg-bg b b-border-strong shadow-sm rd';
     $sizeClasses = $sizes[$size] ?? $sizes['sm'];
     $stateClasses = $disabled ? 'cursor-not-allowed op60' : 'cursor-pointer';
 

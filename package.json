@@ -10,7 +10,7 @@
         "@flexilla/alpine-dropdown": "^0.3.0",
         "@flexilla/alpine-modal": "^0.3.0",
         "@flexilla/alpine-offcanvas": "^0.3.0",
-        "apexcharts": "^5.3.6",
+        "apexcharts": "^5.3.3",
         "autoprefixer": "^10.4.23",
         "axios": "^1.13.2",
         "concurrently": "^9.2.1",

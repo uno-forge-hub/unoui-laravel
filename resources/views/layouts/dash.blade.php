@@ -31,7 +31,7 @@
     </script>
     @livewireStyles
     @livewireScripts
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js','resources/js/buildChart.js'])
 </head>
 
 <body class="min-h-screen overflow-hidden overflow-y-auto bg-bg antialiased" x-data x-cloak>

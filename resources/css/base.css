@@ -51,6 +51,8 @@
   --chart-grid-color: hsl(var(--c-gray-200));
   --chart-grid-dash-array: 2;
 
+  --c-border-scrollbar: hsl(var(--border-strong));
+
 }
 
 .dark {

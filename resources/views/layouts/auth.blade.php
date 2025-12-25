@@ -10,7 +10,7 @@
     <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600" rel="stylesheet" />
     @livewireStyles
     @livewireScripts
-    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/buildChart.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     {{-- Add CSRF token meta tag --}}
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
