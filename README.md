@@ -1,3 +1,5 @@
+![Cover Image](/public/cover-image.webp)
+
 # ⚡ Laravel + Livewire + Volt + UnoCSS
 
 A **smart starter kit** to kickstart your next Laravel project with a modern frontend and component-driven development flow.
@@ -20,7 +22,7 @@ A **smart starter kit** to kickstart your next Laravel project with a modern fro
 
 ```bash
 # Clone the repo
-git clone https://github.com/unoforge/unoui-laravel project-name
+git clone https://github.com/uno-forge-hub/unoui-laravel.git project-name
 
 cd project-name
 
