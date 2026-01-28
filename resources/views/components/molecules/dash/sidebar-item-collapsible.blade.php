@@ -16,7 +16,8 @@
                 <li>
                     <a data-state="{{ $item['isActive'] ? 'active' : 'inactive' }}"
                         href="{{ $item['href'] ?? '#' }}"
-                        class="flex fx-active-relative items-center text-sm gap-2.5 px3 py1.5 text-fg-muted hover-bg-bg-surface hover-text-fg-subtitle fx-active-bg-white dark-fx-active-bg-bg-surface b b-transparent fx-active-b-gray200 dark-fx-active-b-gray800/50 fx-active-shadow-sm rd-lg nav-sub-item-ind">
+                        class="flex fx-active-relative items-center text-sm gap-2.5 px3 py1.5 text-fg-muted hover-bg-bg-surface hover-text-fg-subtitle fx-active-bg-white dark-fx-active-bg-bg-surface b b-transparent fx-active-b-gray200 dark-fx-active-b-gray800/50 fx-active-shadow-sm rd-lg nav-sub-item-ind"
+                        wire:navigate>
                         <span class="ml-7">
                             {{ $item['name'] }}
                         </span>

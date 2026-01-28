@@ -1,5 +1,5 @@
 <?php
-use Livewire\Volt\Component;
+use Livewire\Component;
 use Livewire\Attributes\Layout;
 
 new #[Layout('layouts.dash')]

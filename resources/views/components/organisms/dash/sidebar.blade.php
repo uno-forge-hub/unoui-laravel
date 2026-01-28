@@ -71,7 +71,7 @@
     ];
 @endphp
 <aside x-data x-offcanvas id="dashsidebar"
-    class="fixed top-0 h-dvh bg-bg b-r b-border bg-bg max-w-72 w11/12 lg-max-wnone lg-w72 p-4 -translate-x-full lg-translate-x-0 left-0 fx-open-translate-x-0 op0 fx-open-op100 lg-op100 ease-linear duration-200 lg-transition-none lg-duration-0">
+    class="fixed top-0 h-dvh bg-bg b-r b-border bg-bg max-w-72 w11/12 lg-max-wnone lg-w72 p-4 -translate-x-full lg-translate-x-0 left-0 fx-open-translate-x-0 op0 fx-open-op100 lg-op100 ease-linear duration-200 lg-transition-none lg-duration-0 z40 lg-z-auto">
     <div class="flex flex-col wfull hfull">
         <div class="flex items-center gap-3">
             <a href="#">

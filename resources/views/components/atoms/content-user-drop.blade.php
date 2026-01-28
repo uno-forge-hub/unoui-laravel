@@ -11,17 +11,11 @@
         </div>
     </li>
     <li class=" b-b py1.5 b-border grid grid-cols-2 gap2 ">
-        <x-ui.button 
-            size="sm" 
-            variant="none" 
-            x-on:click="$store.theme.setToLight()"
+        <x-ui.button size="sm" variant="none" x-on:click="$store.theme.setToLight()"
             class="hover-bg-bg-suface bg-bg-surface dark-bg-bg justify-center b b-border dark-b-transparent">
             <span class="i-ph-sun flex"></span>
         </x-ui.button>
-        <x-ui.button 
-            size="sm" 
-            variant="none" 
-            x-on:click="$store.theme.setToDark()"
+        <x-ui.button size="sm" variant="none" x-on:click="$store.theme.setToDark()"
             class="hover-bg-bg-suface bg-bg dark-bg-bg-surface justify-center b b-transparent dark-b-border-light">
             <span class="i-ph-moon flex"></span>
         </x-ui.button>
@@ -33,9 +27,6 @@
         </x-ui.dropdown.item>
     </li>
     <li class="wfull">
-        <x-ui.dropdown.item danger class="wfull">
-            <span class="i-ph-sign-out flex mr2"></span>
-            Logout
-        </x-ui.dropdown.item>
+        <livewire:blocks.logout-item />
     </li>
 </ul>

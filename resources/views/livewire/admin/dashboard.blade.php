@@ -1,8 +1,8 @@
 <?php
-use Livewire\Volt\Component;
+use Livewire\Component;
 use Livewire\Attributes\Layout;
 
-new #[Layout('layouts.dash')] class extends Component {
+new #[Layout('layouts::dash')] class extends Component {
     //
 }; ?>
 
@@ -202,16 +202,8 @@ new #[Layout('layouts.dash')] class extends Component {
                 <x-atoms.home-stat :title="$stat['title']" :value="$stat['value']" :comparisonText="$stat['comparisonText']" :comparisonValue="$stat['comparisonValue']"
                     :type="$stat['type']" />
             @endforeach
-            <x-atoms.card class="isolate max-sm:order-last sm-col-span-full flex flex-col">
-                <div x-data="apexChart({
-                    series: [
-                        { name: 'Closed', data: [50, 80, 10, 5, 10, 100, 70, 50, 70, 80, 110, 120] },
-                        { name: 'Lose', data: [80, 40, 105, 20, 25, 80, 35, 40, 45, 50, 55, 60] }
-                    ],
-                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-                
-                })"></div>
-            </x-atoms.card>
+
+            <livewire:blocks.dash-chart />
             <x-atoms.card class="order-last col-span-full flex flex-col">
                 <div class="mb-6">
                     <h2 class="block text-fg-title text-lg font-medium">
@@ -240,7 +232,7 @@ new #[Layout('layouts.dash')] class extends Component {
                                 Status
                             </x-ui.table.head>
                             <x-ui.table.head>
-                               
+
                             </x-ui.table.head>
                         </tr>
                     </x-ui.table.header>
@@ -289,12 +281,14 @@ new #[Layout('layouts.dash')] class extends Component {
                                     </span>
                                 </x-ui.table.cell>
                                 <x-ui.table.cell class="whitespace-nowrap">
-                                    <x-ui.dropdown.trigger variant="solid" intent="gray" dropdownId="dealDropdown-{{ $deal['ID'] }}">
+                                    <x-ui.dropdown.trigger variant="solid" intent="gray"
+                                        dropdownId="dealDropdown-{{ $deal['ID'] }}">
                                         <span class="i-ph-dots-three-vertical text-sm"></span>
                                     </x-ui.dropdown.trigger>
                                 </x-ui.table.cell>
                             </x-ui.table.row>
-                            <x-ui.dropdown wire:key="dealDropdown-{{ $deal['ID'] }}" size="w-40" id="dealDropdown-{{ $deal['ID'] }}">
+                            <x-ui.dropdown wire:key="dealDropdown-{{ $deal['ID'] }}" size="w-40"
+                                id="dealDropdown-{{ $deal['ID'] }}">
                                 <x-ui.dropdown.item>
                                     <span class="i-ph-eye text-sm mr2"></span>
                                     View deal

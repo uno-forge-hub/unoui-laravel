@@ -1,6 +1,6 @@
 ![Cover Image](/public/cover-image.webp)
 
-# ⚡ Laravel + Livewire + Volt + UnoCSS
+# ⚡ Laravel + Livewire + UnoCSS
 
 A **smart starter kit** to kickstart your next Laravel project with a modern frontend and component-driven development flow.
 
@@ -10,7 +10,6 @@ A **smart starter kit** to kickstart your next Laravel project with a modern fro
 - 📊 **Dashboard** layout with navigation and basic pages
 - **[Laravel 12](https://laravel.com/)** – PHP framework for web artisans
 - **[Livewire](https://livewire.laravel.com/)**
-- **[Volt](https://livewire.laravel.com/docs/volt)** 
 - **[UnoCSS](https://unocss.dev/)** – instant atomic CSS engine, zero runtime
 - **[Flexilla](https://github.com/unoforge/flexilla)** – Interactive components (modal, dropdown, popover, accordion, tabs...)
 - **[Preset UI](https://github.com/unoforge/unify-preset)** – Preset for UnoCSS with utility classes for buttons, forms, cards, etc... 

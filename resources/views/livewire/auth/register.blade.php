@@ -6,9 +6,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Livewire\Attributes\Layout;
-use Livewire\Volt\Component;
+use Livewire\Component;
 
-new #[Layout('layouts.auth')] class extends Component {
+new #[Layout('layouts::auth')] class extends Component {
     public string $name = '';
     public string $email = '';
     public string $password = '';
@@ -31,7 +31,7 @@ new #[Layout('layouts.auth')] class extends Component {
 
         Auth::login($user);
 
-        $this->redirectIntended(route('admin.dashboard', absolute: false), navigate: true);
+        $this->redirectIntended(route('admin.dashboard', absolute: false), navigate: false);
     }
 }; ?>
 
